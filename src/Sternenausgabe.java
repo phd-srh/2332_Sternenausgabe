@@ -7,6 +7,8 @@ public class Sternenausgabe {
         int anzahlDerZeilen = eingabe.nextInt();
 
         for (int zeile=1; zeile <= anzahlDerZeilen; zeile++) {
+            for (int i=0; i < anzahlDerZeilen-zeile; i++)
+                System.out.print(" ");
             for (int spalte=1; spalte <= zeile; spalte++) {
                 System.out.print("* ");
             }
